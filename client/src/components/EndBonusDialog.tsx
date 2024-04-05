@@ -60,7 +60,7 @@ function EndBonusDialog(props: {
 		//TODO: post запрос к серверу для сохранения показателей в БД
 		dispatch(postUserData(user.name, inputs))
 		dispatch(setBonusFlag(user.name, false))
-		window.location.href = '/'
+		window.location.href = '/flappy-bird-app'
 	}
 
 	return (

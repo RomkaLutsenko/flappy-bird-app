@@ -26,7 +26,7 @@ function EndDialog(props: {
 
 	const handleToMainMenuClick = () => {
 		dispatch(postUserMoney(user.name, props.score))
-		window.location.href = '/'
+		window.location.href = '/flappy-bird-app'
 	}
 
 	const handleRetryClick = () => {

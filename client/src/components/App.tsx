@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Game from '../components/Game'
+import Login from '../components/Login'
+import Menu from '../components/Menu'
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { checkAuth } from '../store/slices/ActionCreators'
-import Game from './Game'
-import Login from './Login'
-import Menu from './Menu'
 
 function App() {
 	const { isAuth } = useAppSelector((state: any) => state.actionSlice)
@@ -18,7 +18,7 @@ function App() {
 	}, [])
 
 	return (
-		<BrowserRouter basename='/flappy-bird'>
+		<BrowserRouter basename='/flappy-bird-app'>
 			<Routes>
 				{isAuth ? (
 					<>
@@ -26,7 +26,7 @@ function App() {
 						<Route path='/game' element={<Game />} />
 					</>
 				) : (
-					<Route path='/login' element={<Login />} />
+					<Route path='/' element={<Login />} />
 				)}
 			</Routes>
 		</BrowserRouter>

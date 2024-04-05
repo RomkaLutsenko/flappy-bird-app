@@ -2,7 +2,7 @@
 	"name": "flappy-bird",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://romkalutsenko.github.io/flappy-bird/",
+	"homepage": "https://romkalutsenko.github.io/flappy-bird-app/",
 	"dependencies": {
 		"@emotion/react": "^11.11.4",
 		"@emotion/styled": "^11.11.0",

@@ -1,5 +1,4 @@
 import { Button, Grid, Typography } from '@material-ui/core'
-import { useNavigate } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { logout } from '../store/slices/ActionCreators'
 import { actionSlice } from '../store/slices/actionSlice'
@@ -16,15 +15,13 @@ const { setGame } = actionSlice.actions
 const Menu: React.FC = () => {
 	const user = useAppSelector((state: any) => state.userSlice.user)
 	const dispatch = useAppDispatch()
-	const navigate = useNavigate()
 
 	const handleGameClick = () => {
 		dispatch(setGame(true))
-		navigate('/game')
+		window.location.href = '/flappy-bird-app/game'
 	}
 
 	const handleLogout = () => {
-		navigate('/login')
 		dispatch(logout())
 	}
 
