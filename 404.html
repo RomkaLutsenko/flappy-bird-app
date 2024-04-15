@@ -11,7 +11,9 @@
 			var newUrl = `${l.protocol}//${l.hostname}${
 				l.port ? ':' + l.port : ''
 			}/${path}${query ? '?q=' + query : ''}${hash}`
-			window.location.replace(newUrl)
+			if (window.location.href !== newUrl) {
+				window.location.replace(newUrl)
+			}
 		</script>
 	</head>
 	<body></body>
