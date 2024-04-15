@@ -6,15 +6,11 @@
 		<script type="text/javascript">
 			;(function () {
 				var url = new URL(window.location.href)
-				var path = url.pathname
-				var query = url.search.slice(1).replace(/&/g, '~and~')
-				var hash = url.hash
-
 				var newUrl = `${url.protocol}//${url.hostname}${
 					url.port ? ':' + url.port : ''
-				}${path}${query ? '?q=' + query : ''}${hash}`
+				}/flappy-bird-app/index.html`
 
-				window.history.replaceState(null, null, newUrl)
+				window.location.replace(newUrl)
 			})()
 		</script>
 	</head>
