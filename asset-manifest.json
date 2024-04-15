@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/flappy-bird-app/static/css/main.c2f88b60.chunk.css",
-    "main.js": "/flappy-bird-app/static/js/main.434026ba.chunk.js",
-    "main.js.map": "/flappy-bird-app/static/js/main.434026ba.chunk.js.map",
+    "main.js": "/flappy-bird-app/static/js/main.900a3746.chunk.js",
+    "main.js.map": "/flappy-bird-app/static/js/main.900a3746.chunk.js.map",
     "runtime-main.js": "/flappy-bird-app/static/js/runtime-main.c48e8208.js",
     "runtime-main.js.map": "/flappy-bird-app/static/js/runtime-main.c48e8208.js.map",
-    "static/js/2.66f90021.chunk.js": "/flappy-bird-app/static/js/2.66f90021.chunk.js",
-    "static/js/2.66f90021.chunk.js.map": "/flappy-bird-app/static/js/2.66f90021.chunk.js.map",
+    "static/js/2.2bc4288d.chunk.js": "/flappy-bird-app/static/js/2.2bc4288d.chunk.js",
+    "static/js/2.2bc4288d.chunk.js.map": "/flappy-bird-app/static/js/2.2bc4288d.chunk.js.map",
     "index.html": "/flappy-bird-app/index.html",
     "static/css/main.c2f88b60.chunk.css.map": "/flappy-bird-app/static/css/main.c2f88b60.chunk.css.map",
-    "static/js/2.66f90021.chunk.js.LICENSE.txt": "/flappy-bird-app/static/js/2.66f90021.chunk.js.LICENSE.txt"
+    "static/js/2.2bc4288d.chunk.js.LICENSE.txt": "/flappy-bird-app/static/js/2.2bc4288d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c48e8208.js",
-    "static/js/2.66f90021.chunk.js",
+    "static/js/2.2bc4288d.chunk.js",
     "static/css/main.c2f88b60.chunk.css",
-    "static/js/main.434026ba.chunk.js"
+    "static/js/main.900a3746.chunk.js"
   ]
 }
