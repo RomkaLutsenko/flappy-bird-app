@@ -5,18 +5,16 @@
 		<title>Single Page Apps for GitHub Pages</title>
 		<script type="text/javascript">
 			;(function () {
-				var l = window.location
-				if (l.pathname.substr(0, 5) === '/flappy-bird-app') {
-					var path = l.pathname.slice(17) // Убираем начальный '/flappy-bird-app'
-					var query = l.search.slice(1).replace(/&/g, '~and~') // Обрабатываем параметры запроса
-					var hash = l.hash // Сохраняем хэш
-					var newUrl = `${l.protocol}//${l.hostname}${
-						l.port ? ':' + l.port : ''
-					}/${path}${query ? '?q=' + query : ''}${hash}`
-					if (window.location.href !== newUrl) {
-						window.location.replace(newUrl)
-					}
-				}
+				var url = new URL(window.location.href)
+				var path = url.pathname
+				var query = url.search.slice(1).replace(/&/g, '~and~')
+				var hash = url.hash
+
+				var newUrl = `${url.protocol}//${url.hostname}${
+					url.port ? ':' + url.port : ''
+				}${path}${query ? '?q=' + query : ''}${hash}`
+
+				window.history.replaceState(null, null, newUrl)
 			})()
 		</script>
 	</head>
