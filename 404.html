@@ -6,9 +6,10 @@
 		<script type="text/javascript">
 			;(function () {
 				var url = new URL(window.location.href)
+				var previousPath = url.pathname
 				var newUrl = `${url.protocol}//${url.hostname}${
 					url.port ? ':' + url.port : ''
-				}/flappy-bird-app/`
+				}/flappy-bird-app${previousPath}`
 
 				window.location.replace(newUrl)
 			})()
