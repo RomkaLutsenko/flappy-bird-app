@@ -6,12 +6,21 @@
 		<script type="text/javascript">
 			;(function () {
 				var url = new URL(window.location.href)
-				var previousPath = url.pathname
+				var basePath = '/flappy-bird-app'
+				var currentPath = url.pathname
+
+				// Убираем повторяющиеся части пути
+				while (currentPath.startsWith(basePath)) {
+					currentPath = currentPath.slice(basePath.length)
+				}
+
 				var newUrl = `${url.protocol}//${url.hostname}${
 					url.port ? ':' + url.port : ''
-				}/flappy-bird-app${previousPath}`
+				}${basePath}${currentPath}`
 
-				window.location.replace(newUrl)
+				if (window.location.href !== newUrl) {
+					window.location.replace(newUrl)
+				}
 			})()
 		</script>
 	</head>
